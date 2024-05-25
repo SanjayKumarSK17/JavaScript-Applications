@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewLoginForm</title>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div style="display:flex;justify-content: space-evenly;">
+        <div style="border: 7px solid plum;padding: 20px;" id="userportal">
+            <form action="" method="post" id="userform" onsubmit="return ButtonCli(event)">
+
+                <h1 style="border: 6px solid plum;text-align: center;padding: 20px; color: purple;">Login Form</h1>
+
+                <form action="" method="post" id="userform" onsubmit="return ButtonCli(event)">
+
+                    <p>Name <input type="text" name="fname" id="firstnameid" placeholder="Enter First Name" onkeyup="ValidateUserFName()" required>
+                        <input type="text" name="lname" id="lastnameid" placeholder="Enter Last Name" onkeyup="ValidateUserLName()">
+                        <span style="visibility: hidden;" id="namespan">Message</span>
+                    </p> <br>
+    
+                    <p>Email ID <input type="email" name="mail" id="emailid" placeholder="Enter EMail" onkeyup="ValidateUserEmail()" required>
+                        <span style="visibility: hidden;" id="emailspan">Message</span>
+                    </p> <br>
+    
+                    <p>Phone Number <input type="text" name="phone" id="phonenumberid" placeholder="Enter Phone Number" onkeyup="ValidatePhoneNumber()" maxlength="10" required>
+                        <span style="visibility: hidden;" id="phonenumspan">Message</span>
+                    </p> <br>
+    
+                    <p>Present Address <br><textarea name="address1" id="presentaddressid" rows="5" cols="35"
+                            placeholder="Enter Present Address" required></textarea></p> <br>
+    
+                    <p>Permanent Address <br> <input type="checkbox" name="copyadd" id="copyaboveadd" onclick="CopyAddress()">    Same as Above Address <br>
+                        <textarea name="address2" id="permanentaddressid" rows="5" cols="35"
+                            placeholder="Enter Permanent Address" required></textarea></p> <br>
+    
+                    <p>Pincode <input type="text" name="pin" id="pincodeid" placeholder="Enter Pincode" onkeyup="ValidatePincode()">
+                        <span style="visibility: hidden;" id="pincodespan">Message</span>
+                    </p> <br>
+    
+                    <p>Gender <select name="gen" id="genderid">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Not to Disclose">Not to Disclose</option>
+                        </select></p><br>
+    
+                    <p>Department <select name="dept" id="deptnameid">
+                            <option value="EEE">EEE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="CSE">CSE</option>
+                            <option value="IT">IT</option>
+                            <option value="Civil">Civil</option>
+                            <option value="Mech">Mech</option>
+                        </select></p><br>
+    
+                        <p><input type="submit" value="Submit"></p>
+                </form>
+
+            </form>
+        </div>
+
+        <div id="userdatadisplay" style="display: none;">
+            <table border="1" cellpadding="4" id="usertable">
+                <caption>User Details</caption>
+                <tr>
+                    <th>Section</th>
+                    <td>Display User Details</td>
+                </tr>
+                <tr>
+                    <th>User Name</th>
+                    <td id="username1">SK</td>
+                </tr>
+                <tr>
+                    <th>E-Mail ID</th>
+                    <td id="emailid1">ak7@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Phone Number</th>
+                    <td id="phoneid1">9996940359</td>
+                </tr>
+                <tr>
+                    <th>Present Address</th>
+                    <td id="presentaddress111">14, Chennai Strret, India</td>
+                </tr>
+                <tr>
+                    <th>Permanent Address</th>
+                    <td id="permaddress111">14, Chennai Strret, India</td>
+                </tr>
+                <tr>
+                    <th>Pincode</th>
+                    <td id="pincodee1">632002</td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td id="genid11">Male</td>
+                </tr>
+                <tr>
+                    <th>Department</th>
+                    <td id="deptid11">ECE</td>
+                </tr>
+                <tr>
+                    <th> Image</th>
+                    <td id="imgidd"><img src="" alt=""></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>

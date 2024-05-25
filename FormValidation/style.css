@@ -1,0 +1,26 @@
+p{
+    color: rgb(98, 18, 98);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#btn{
+    border: 5px solid purple;
+    width: 80px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#userdatadisplay{
+    border: 5px solid rgb(131, 13, 234);
+    margin: 20px;
+    padding: 15px 15px;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#usertable{
+    border: 5px solid rgb(131, 13, 234);
+}
+

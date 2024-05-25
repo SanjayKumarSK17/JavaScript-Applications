@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scriptbook.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menubar">
+            <div class="navbar">
+                <div class="logo">
+                    <h3 class="headcolor"> Synfusion Library Portal</h3>
+                </div>
+                <ul>
+                    <li><a href="book.html">Books</a></li>
+                    <li><a href="user.html">Users</a></li>
+                    <li><a href="index.html">Exit</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="bookportal">
+            <form action="" id="bookform" method="post" onsubmit="return ButtonClick(event)">
+                <p>Book Name <input type="text" name="bookname" id="bookid" required onkeyup="ValidateBookName()" placeholder="Enter Book Name">
+                    <span style="visibility: hidden;" id="booknamespan">Message</span>
+                </p><br>
+
+                <p>Department <select name="dept" id="deptnameid" required>
+                        <option value="EEE">EEE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="CSE">CSE</option>
+                        <option value="IT">IT</option>
+                        <option value="Civil">Civil</option>
+                        <option value="Mech">Mech</option>
+                    </select></p><br>
+
+                <p>Rack Number <input type="text" name="rackno" id="rackid" required onkeyup="ValidateRackNumber()" placeholder="Enter Rack Number">
+                    <span style="visibility: hidden;" id="racknospan">Message</span></p> <br>
+
+                <p>Author Name <input type="text" name="author" id="authornameid" onkeyup="ValidateAuthorName()" minlength="5" placeholder="Enter Author Name">
+                    <span style="visibility: hidden;" id="authornamespan">Message</span></p> <br>
+
+                <p>Publish Year <input type="text" name="pubyear" id="pubyearid" onkeyup="ValidatePublisherYear()"  maxlength="4" placeholder="Enter Publish Year">
+                    <span style="visibility: hidden;" id="pubyearspan">Message</span></p> <br>
+
+                <p>Publisher Name <input type="text" name="pubname" id="pubnameid" onkeyup="ValidatePublisherName()" placeholder="Enter Publisher Name">
+                    <span style="visibility: hidden;" id="pubnamespan">Message</span></p> <br>
+
+                <p>Author Email <input type="text" name="amail" id="authormailid" placeholder="Enter Author Mail" onkeyup="ValidateAuthorEmail()">
+                    <span style="visibility: hidden;" id="authormailspan">Message</span></p> <br>
+
+                <p>Phone Number <input type="text" name="num" id="phonenumid" maxlength="10" onkeyup="ValidatePhoneNumber()" placeholder="Enter Phone Number">
+                    <span style="visibility: hidden;" id="phonenumspan">Message</span></p> <br>
+                
+                <p>Address  <br><textarea name="address" id="address11id" rows="5" cols="35" placeholder="Enter Address"></textarea></p> <br>
+
+                <p>Pincode <input type="text" name="pin" id="pincodeid" onkeyup="ValidatePincode()" maxlength="6" placeholder="Enter Pincode">
+                    <span style="visibility: hidden;" id="pincodespan">Message</span></p> <br>
+                
+                <p>ISBN Number <input type="text" name="isbn" id="isbnnumid" onkeyup="ValidateISBN()" maxlength="11" placeholder="Enter ISBN Number">
+                    <span style="visibility: hidden;" id="isbnnumspan">Message</span></p> <br>
+                
+                <p>Upload Book Photo <input type="file" name="bookpic" id="bookpicid" required></p> <br>
+
+                <p><input type="submit" value="Submit"></p>
+            </form>
+        </div>
+
+        <div id="bookdatadisplay" style="display: none;">
+            <table border="1" cellpadding="4" id="booktable">
+                <caption>Book Details</caption>
+                <tr>
+                    <th>Section</th>
+                    <td>Display Book Details</td>
+                </tr>
+                <tr>
+                    <th>Book Name</th>
+                    <td id="booknameid1">Sk</td>
+                </tr>
+                <tr>
+                    <th>Department</th>
+                    <td id="deptid">ECE</td>
+                </tr>
+                <tr>
+                    <th>Rack Number</th>
+                    <td id="rackid1">13</td>
+                </tr>
+                <tr>
+                    <th>Author Name</th>
+                    <td id="authid1">Sherlock</td>
+                </tr>
+                <tr>
+                    <th>Publisher Year</th>
+                    <td id="pubyearid1">2016</td>
+                </tr>
+                <tr>
+                    <th>Publisher Name</th>
+                    <td id="pubnameidd1">SK Publs</td>
+                </tr>
+                <tr>
+                    <th>Author Email</th>
+                    <td id="authmailid1">akv@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Phone Number</th>
+                    <td id="phonenumidd1">9994540359</td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td id="addressid">14, Chennai Strret, India</td>
+                </tr>
+                <tr>
+                    <th>Pincode</th>
+                    <td id="pincodid1">632002</td>
+                </tr>
+                <tr>
+                    <th>ISBN Number</th>
+                    <td id="isbnid">ISBN-604285</td>
+                </tr>
+                <tr>
+                    <th>Book Image</th>
+                    <td><img src="th (1).jpg" alt=""></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p style="color: white;">Copyrights @2024- present Synfusion</p>
+        </div>
+    </div>
+</body>
+
+</html>
